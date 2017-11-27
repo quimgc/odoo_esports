@@ -1,0 +1,26 @@
+<odoo>
+    <data>
+
+        <!--<act_window id="action_persona"-->
+                    <!--name="Persona"-->
+                    <!--res_model="persona"-->
+                    <!--view_mode="tree,form" />-->
+
+        <!--<menuitem id="menu_persona"-->
+                  <!--name="Persona"-->
+                  <!--sequence="20"-->
+                  <!--action="action_persona" />-->
+
+        <record id="vista_persones" model="ir.ui.view">
+            <field name="name">Persona</field>
+            <field name="model">persona</field>
+            <field name="arch" type="xml">
+                <form string="Persona">
+                    <field name="name"/>
+                    <field name="edat"/>
+                </form>
+            </field>
+        </record>
+
+    </data>
+</odoo>
