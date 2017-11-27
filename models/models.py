@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api
+from . import Esports
 
 # class esports(models.Model):
 #     _name = 'esports.esports'
