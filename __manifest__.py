@@ -3,8 +3,7 @@
     'name': "esports",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Modul esports""",
 
     'description': """
         Long description of module's purpose
@@ -24,10 +23,10 @@
 
     # always loaded
     'data': [
+        'views/persona.view.xml',
         # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
-        'views/club.view.xml',
+        #'views/views.xml',
+        #'views/templates.xml',
     ],
     # only loaded in demonstration mode
     'demo': [
