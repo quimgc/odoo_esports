@@ -41,3 +41,4 @@ class Categoria(models.Model):
                                   ('Adult M'),('Adult F')], 'Descripcio')
 
     pertany = fields.One2many('esports.jugador', 'dni', 'Jugadors')
+    
