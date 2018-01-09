@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="action_esports_persona" model="ir.actions.act_window">
+            <field name="name">Persona</field>
+            <field name="res_model">esports.persona</field>
+            <field name="view_model">tree,kanban,form</field>
+            <field name="view_type">form</field>
+            <field name="context">{"search_default_filter_to_shell":1}</field>
+            <field name="help" type="html">
+                <p> Help! </p>
+            </field>
+        </record>
+        <!-- Per a fer un desplegable s'ha de crear els fills del pare amb el atribut parent="id_del_pare" -->
+        <menuitem action="action_esports_persona" id="menu_esports_persona" name="Persona"/>
+
+        <record id="action_esports_persona_form" model="ir.ui.view">
+            <field name="name">Persona Form</field>
+            <field name="model">esports.persona</field>
+            <field name="arch" type="xml">
+                <form string="Persona">
+                    <header>
+                    </header>
+                    <sheet>
+                        <group name="group_top">
+                            <group name="group_left">
+                                <field name="dni"/>
+                                <field name="nom"/>
+                                <field name="cognom1"/>
+                                <field name="cognom2"/>
+                                <field name="tlf1"/>
+                                <field name="tlf2"/>
+                                <field name="email"/>
+                                <field name="adreca"/>
+                                <field name="poblacio"/>
+                                <field name="codiPostal"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_tree_esports_persona" model="ir.ui.view">
+            <field name="name">Esports persona Tree</field>
+            <field name="model">esports.persona</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="dni"/>
+                    <field name="nom"/>
+                    <field name="cognom1"/>
+                    <field name="cognom2"/>
+                    <field name="tlf1"/>
+                    <field name="tlf2"/>
+                    <field name="email"/>
+                    <field name="adreca"/>
+                    <field name="poblacio"/>
+                    <field name="codiPostal"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>
